@@ -36,8 +36,8 @@ def main():
             player2.win_coin()
             print("No Match! Player 2 wins a coin.")
 
-            print("Player 1 has " + player1.get_wallet + " coins.")
-            print("Player 2 has " + player2.get_wallet + " coins.")
+            print("Player 1 has " + str(player1.get_wallet()) + " coins.")
+            print("Player 2 has " + str(player2.get_wallet()) + " coins.")
 
             user_input = input("Do you want to toss the coins? (y/n): ")
 
