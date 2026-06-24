@@ -13,8 +13,8 @@ def main():
     player2 = Player("Player 2")
 
     print("--- Coin Match Game ---")
-    print("Player 1 has " + str(player1.get_wallet()))
-    print("Player 2 has " + str(player2.get_wallet()))
+    print("Player 1 has " + str(player1.get_wallet()) + " coins.")
+    print("Player 2 has " + str(player2.get_wallet()) + " coins.")
 
     user_input = input("Do you want to toss the coins? (y/n): ")
 
@@ -34,11 +34,11 @@ def main():
         if side1 == side2:
             player1.win_coin()
             player2.lose_coin()
-            print("Its a Match! Player 1 wins a coin.")
+            print("...Its a Match! Player 1 wins a coin.")
         else:
             player1.lose_coin()
             player2.win_coin()
-            print("No Match! Player 2 wins a coin.")
+            print("...No Match! Player 2 wins a coin.")
 
         print("Player 1 has " + str(player1.get_wallet()) + " coins.")
         print("Player 2 has " + str(player2.get_wallet()) + " coins.")
