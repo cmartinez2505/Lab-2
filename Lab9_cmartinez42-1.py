@@ -12,6 +12,10 @@ def main():
     player1 = Player("Player 1")
     player2 = Player("Player 2")
 
+    print("--- Coin Match Game ---")
+    print("Player 1 has " + str(player1.get_wallet()))
+    print("Player 2 has " + str(player2.get_wallet()))
+
     user_input = input("Do you want to toss the coins? (y/n): ")
 
     while user_input == "y" or user_input == "Y":
